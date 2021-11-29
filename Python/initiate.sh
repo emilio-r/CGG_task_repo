@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Script written nov 2021 for use during CGG-problem. 
-#USE: python3 initiate.sh -s {samples.txt] -m {your email adress}
+#USE: sh initiate.sh -s {samples.txt] -m {your email adress}
 #Using this script will add parsing of input-file to cronjob
 #this will run, and then send the user an email with output.
 
