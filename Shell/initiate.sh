@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#script will add the running of your parser each week
+#Script written nov 2021 for use during CGG-problem. 
+#USE: sh initiate.sh -s {samples.txt] -m {your email adress}
+#Using this script will add parsing of input-file to cronjob
+#this will run, and then send the user an email with output.
 
 while getopts "s:m:h" opt; do
   case "${opt}" in

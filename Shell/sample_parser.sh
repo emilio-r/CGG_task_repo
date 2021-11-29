@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#Script to parse CGG-sample.txt. 
-#USE: sh sample_parser.sh -s {infile}
+#Script written nov 2021 for use during CGG-problem. 
+#USE: sh sample_parser.sh -s {samples.txt}
 
 #Enterable options to specify inputfile & tiny helpflag
-while getopts "s:m:h" opt; do
+while getopts ":s:h" opt; do
   case "${opt}" in
     s) sample=${OPTARG}
     ;;
