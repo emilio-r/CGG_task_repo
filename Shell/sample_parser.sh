@@ -16,6 +16,14 @@ while getopts ":s:h" opt; do
   esac
 done
 
+#Sanitycheck if no flags are entered
+S=$(echo $sample | wc -m)
+if [[ $S -le 1 ]]; then
+  echo -e "Did you input a sample?" 
+  echo -e "Use flag -s to designate a sample input"
+  exit 1
+fi
+
 #Start with a sanitycheck that the input follows correct format
 #and check date for logs
 A=$(head -1 $sample | cut -d "," -f 6)
