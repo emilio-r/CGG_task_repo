@@ -29,7 +29,7 @@ if [[ $S -gt 1 ]] && [[ $M == TRUE ]]; then
   echo "" >> mycron
   crontab mycron
   rm mycron
-  echo "sample_parser.sh now added to crontab"
+  echo "P_sample_parser.py now added to crontab"
 else
   echo -e "No sample or email designated"
   echo -e "Use -m to designate email and -s to designate input"
